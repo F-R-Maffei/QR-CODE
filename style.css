@@ -9,13 +9,16 @@ html {
 }
 
 body {
-  display: grid;
-  place-content: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   font-family: "Outfit", sans-serif;
   background-color: hsl(212deg, 45%, 89%);
   font-size: 1.5rem;
   place-content: center;
-  min-height: 100vh;
+  height: 100vh;
+  max-width: 100%;
 }
 
 .container {
@@ -24,10 +27,8 @@ body {
   border-radius: 1.5rem;
   padding: 1rem 1rem 2.5rem 1rem;
   box-shadow: 0 2em 2em hsla(218deg, 44%, 22%, 0.15);
-  width: 40vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 25rem;
+  position: relative;
 }
 .container img {
   width: 100%;
